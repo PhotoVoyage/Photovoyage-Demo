@@ -1,0 +1,105 @@
+/* admin.css */
+@import url('https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css');
+
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Heading Styles */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+}
+
+/* Image Styles */
+.card-image {
+    max-width: 100%;
+    margin: 20px auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-image:hover {
+    transform: scale(1.1);
+}
+
+/* Form Styles */
+form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+.button {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #ff3333;
+    transform: scale(1.05);
+}
+
+/* Back Link Styles */
+#backButton {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #333;
+    padding: 8px 16px;
+    background-color: #f9f9f9;
+    border: 2px solid #333;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+#backButton:hover {
+    background-color: #333;
+    color: #f9f9f9;
+    transform: translateY(-2px);
+}
+
+/* Footer Styles */
+.card-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.card-footer .button {
+    margin-top: 10px;
+}
+
+/* Additional Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
