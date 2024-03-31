@@ -1,6 +1,7 @@
 {
   "scripts": {
     "dev": "node app.js"
+    "build": "express build --output public"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
